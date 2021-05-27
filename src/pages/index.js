@@ -1026,7 +1026,7 @@ export const query = graphql`
         }
       }
     }
-    impact: file(relativePath: { eq: "impact_transparent.png" }) {
+    impact: file(relativePath: { eq: "consultant1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1440) {
           ...GatsbyImageSharpFluid

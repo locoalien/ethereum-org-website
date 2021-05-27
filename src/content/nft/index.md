@@ -6,7 +6,7 @@ template: use-cases
 emoji: ":frame_with_picture:"
 sidebar: true
 sidebarDepth: 2
-image: ../../assets/infrastructure_transparent.png
+image: ../../assets/blockchain.png
 alt: "An Eth logo being displayed via hologram."
 summaryPoints:
   [

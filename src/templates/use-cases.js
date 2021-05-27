@@ -388,12 +388,9 @@ const UseCasePage = ({ data, pageContext }) => {
   return (
     <Container>
       <StyledBannerNotification shouldShow>
-        <StyledEmoji text=":pencil:" />
+        <StyledEmoji text=":technologist:" />
         <div>
           <Translation id="template-usecase-banner" />{" "}
-          <Link to={absoluteEditPath}>
-            <Translation id="template-usecase-edit-link" />
-          </Link>
         </div>
       </StyledBannerNotification>
       <HeroContainer>

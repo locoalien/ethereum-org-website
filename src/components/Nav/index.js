@@ -150,7 +150,7 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
       items: [
         {
           text: "newinntech-quienes-somos",
-          to: "/info/quienes-somos/",
+          to: "/que-es-newinntech/",
         },
         {
           text: "get-eth",

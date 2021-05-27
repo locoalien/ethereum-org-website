@@ -288,7 +288,7 @@ const WhatIsEthereumPage = ({ data }) => {
     },
     {
       title: <Translation id="page-what-is-ethereum-nft-title" />,
-      to: "/nft/",
+      to: "/blockchain/",
       alt: translateMessageId("page-what-is-ethereum-nft-alt", intl),
       image: data.nft.childImageSharp.fixed,
       description: <Translation id="page-what-is-ethereum-nft-description" />,
@@ -393,23 +393,6 @@ const WhatIsEthereumPage = ({ data }) => {
             <Translation id="page-what-is-ethereum-tryit" />
           </p>
         </Column>
-        <CardColumn>
-          <SingleCard
-            emoji=":gear:"
-            title={translateMessageId(
-              "page-what-is-ethereum-singlecard-title",
-              intl
-            )}
-            description={translateMessageId(
-              "page-what-is-ethereum-singlecard-desc",
-              intl
-            )}
-          >
-            <Link to="/learn/">
-              <Translation id="page-what-is-ethereum-singlecard-link" />
-            </Link>
-          </SingleCard>
-        </CardColumn>
       </TwoColumnContent>
       <Content>
         <Divider />
