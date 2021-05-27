@@ -540,14 +540,14 @@ export const calloutImage = graphql`
 
 export const query = graphql`
   query {
-    hero: file(relativePath: { eq: "what-is-ethereum.png" }) {
+    hero: file(relativePath: { eq: "newinntech5.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    ogImage: file(relativePath: { eq: "what-is-ethereum.png" }) {
+    ogImage: file(relativePath: { eq: "newinntech5.png" }) {
       childImageSharp {
         fixed(width: 1200) {
           src
@@ -564,7 +564,7 @@ export const query = graphql`
     dapps: file(relativePath: { eq: "doge-computer.png" }) {
       ...actionCardImage
     }
-    wallets: file(relativePath: { eq: "wallet-cropped.png" }) {
+    wallets: file(relativePath: { eq: "ai-dev.png" }) {
       ...actionCardImage
     }
     eth: file(relativePath: { eq: "eth.png" }) {

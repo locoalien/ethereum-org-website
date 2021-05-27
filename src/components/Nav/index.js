@@ -132,9 +132,9 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "eth-home-icon.png" }) {
+      file(relativePath: { eq: "newinntech-logo.png" }) {
         childImageSharp {
-          fixed(width: 22) {
+          fixed(width: 36) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -144,6 +144,32 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
   const intl = useIntl()
 
   const linkSections = [
+    {
+      text: "new-inntech",
+      ariaLabel: "use-ethereum-menu",
+      items: [
+        {
+          text: "newinntech-quienes-somos",
+          to: "/info/quienes-somos/",
+        },
+        {
+          text: "get-eth",
+          to: "/get-eth/",
+        },
+        {
+          text: "decentralized-applications-dapps",
+          to: "/dapps/",
+        },
+        {
+          text: "page-stablecoins-title",
+          to: "/stablecoins/",
+        },
+        {
+          text: "page-stake-eth",
+          to: "/eth2/staking/",
+        },
+      ],
+    },
     {
       text: "use-ethereum",
       ariaLabel: "use-ethereum-menu",

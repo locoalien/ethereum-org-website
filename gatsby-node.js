@@ -49,6 +49,7 @@ const outdatedMarkdownPages = [
   "/learn/",
   "/wallets/",
   "/what-is-ethereum/",
+  "/prueba/",
 ]
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -203,7 +204,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
   // Create contentVersion v2.0 pages
-  const contentV2Pages = [`eth`, `dapps`, `wallets/index`, `what-is-ethereum`]
+  const contentV2Pages = [
+    `eth`,
+    `dapps`,
+    `wallets/index`,
+    `what-is-ethereum`,
+    `que-es-newinntech`,
+  ]
   const contentV2Languages = supportedLanguages.filter(
     (lang) => getLangContentVersion(lang) >= 2.0
   )
@@ -288,7 +295,8 @@ exports.onCreatePage = ({ page, actions }) => {
         ...page.context,
         isOutdated,
         //display TranslationBanner for translation-component pages that are still in English
-        isContentEnglish: langVersion < 2 && !page.component.includes('/developers/index.js')
+        isContentEnglish:
+          langVersion < 2 && !page.component.includes("/developers/index.js"),
       },
     })
   }

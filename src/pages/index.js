@@ -720,7 +720,7 @@ contract SimpleDomainRegistry {
         <Description>
           <Translation id="page-index-description" />
         </Description>
-        <ButtonLink isSecondary to="/what-is-ethereum/">
+        <ButtonLink isSecondary to="/que-es-newinntech/">
           <Translation id="page-index-title-button" />
         </ButtonLink>
       </Header>
@@ -769,12 +769,9 @@ contract SimpleDomainRegistry {
               <Translation id="page-index-what-is-ethereum-description" />
             </Subtitle>
             <ButtonRow>
-              <ButtonLink to="/what-is-ethereum/">
+              <ButtonLink to="/que-es-newinntech/">
                 <Translation id="page-index-what-is-ethereum-button" />
               </ButtonLink>
-              <StyledButtonLink isSecondary to="/eth/">
-                <Translation id="page-index-what-is-ethereum-secondary-button" />
-              </StyledButtonLink>
             </ButtonRow>
           </FeatureContent>
           <ImageContainer>
@@ -980,7 +977,7 @@ export const query = graphql`
         }
       }
     }
-    ethereum: file(relativePath: { eq: "what-is-ethereum.png" }) {
+    ethereum: file(relativePath: { eq: "newinntech5.png" }) {
       childImageSharp {
         fluid(maxWidth: 1440) {
           ...GatsbyImageSharpFluid
@@ -994,28 +991,28 @@ export const query = graphql`
         }
       }
     }
-    dogefixed: file(relativePath: { eq: "doge-computer.png" }) {
+    dogefixed: file(relativePath: { eq: "software-development.png" }) {
       childImageSharp {
         fixed(width: 320) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    robotfixed: file(relativePath: { eq: "wallet-cropped.png" }) {
+    robotfixed: file(relativePath: { eq: "devops.png" }) {
       childImageSharp {
         fixed(width: 320) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    ethfixed: file(relativePath: { eq: "eth.png" }) {
+    ethfixed: file(relativePath: { eq: "ai-dev.png" }) {
       childImageSharp {
         fixed(width: 320) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    devfixed: file(relativePath: { eq: "developers-eth-blocks.png" }) {
+    devfixed: file(relativePath: { eq: "web-design2.png" }) {
       childImageSharp {
         fixed(width: 320) {
           ...GatsbyImageSharpFixed
