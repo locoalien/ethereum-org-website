@@ -464,11 +464,7 @@ const WhatIsEthereumPage = ({ data }) => {
               intl
             )}
           >
-            <div>
-              <ButtonLink to="/developers/">
-                <Translation id="page-what-is-ethereum-start-building-btn" />
-              </ButtonLink>
-            </div>
+            <div></div>
           </StyledCallout>
           <StyledCallout
             image={data.community.childImageSharp.fixed}
@@ -479,11 +475,7 @@ const WhatIsEthereumPage = ({ data }) => {
               intl
             )}
           >
-            <div>
-              <ButtonLink to="/community/">
-                <Translation id="page-what-is-ethereum-meet-comm" />
-              </ButtonLink>
-            </div>
+            <div></div>
           </StyledCallout>
         </CardContainer>
       </Content>
@@ -562,10 +554,10 @@ export const query = graphql`
     nft: file(relativePath: { eq: "blockchain.png" }) {
       ...useCaseImage
     }
-    developers: file(relativePath: { eq: "developers-eth-blocks.png" }) {
+    developers: file(relativePath: { eq: "team-creative.png" }) {
       ...calloutImage
     }
-    community: file(relativePath: { eq: "enterprise.png" }) {
+    community: file(relativePath: { eq: "time.png" }) {
       ...calloutImage
     }
   }
