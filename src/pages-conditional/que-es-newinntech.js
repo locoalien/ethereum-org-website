@@ -281,7 +281,7 @@ const WhatIsEthereumPage = ({ data }) => {
   const usecases = [
     {
       title: <Translation id="page-what-is-ethereum-defi-title" />,
-      to: "/defi/",
+      to: "/ai/",
       alt: translateMessageId("page-what-is-ethereum-defi-alt", intl),
       image: data.defi.childImageSharp.fixed,
       description: <Translation id="page-what-is-ethereum-defi-description" />,
