@@ -1,5 +1,5 @@
 ---
-title: Blockchain
+title: Servicios Blockchain
 description: An overview of NFTs on Ethereum
 lang: en
 template: use-cases

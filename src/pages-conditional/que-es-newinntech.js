@@ -295,7 +295,7 @@ const WhatIsEthereumPage = ({ data }) => {
     },
     {
       title: <Translation id="page-what-is-ethereum-dao-title" />,
-      to: "/dao/",
+      to: "/iot/",
       alt: translateMessageId("page-what-is-ethereum-dao-alt", intl),
       image: data.dao.childImageSharp.fixed,
       description: <Translation id="page-what-is-ethereum-dao-description" />,

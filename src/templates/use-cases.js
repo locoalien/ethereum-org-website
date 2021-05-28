@@ -371,15 +371,27 @@ const UseCasePage = ({ data, pageContext }) => {
     ariaLabel: "template-usecase-dropdown-aria",
     items: [
       {
-        text: "template-usecase-dropdown-defi",
-        to: "/defi/",
+        text: "template-usecase-dropdown-ai",
+        to: "/ai/",
       },
       {
-        text: "template-usecase-dropdown-nft",
+        text: "template-usecase-dropdown-blockchain",
         to: "/nft/",
       },
       {
-        text: "template-usecase-dropdown-dao",
+        text: "template-usecase-dropdown-softwdevelop",
+        to: "/dao/",
+      },
+      {
+        text: "template-usecase-dropdown-devsecops",
+        to: "/dao/",
+      },
+      {
+        text: "template-usecase-dropdown-iot",
+        to: "/iot/",
+      },
+      {
+        text: "template-usecase-dropdown-consultoria",
         to: "/dao/",
       },
     ],

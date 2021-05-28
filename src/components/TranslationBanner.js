@@ -119,47 +119,7 @@ const TranslationBanner = ({
     ? "translation-banner-body-new"
     : "translation-banner-body-update"
 
-  return (
-    <BannerContainer isOpen={isOpen}>
-      <StyledBanner>
-        <BannerContent isPageRightToLeft={isPageRightToLeft}>
-          <Row>
-            <H3>
-              <Translation id={headerTextId} />
-            </H3>
-            <StyledEmoji
-              ml={"0.5rem"}
-              size={1.5}
-              text=":globe_showing_asia_australia:"
-            />
-          </Row>
-          <p>
-            <Translation id={bodyTextId} />
-          </p>
-          <ButtonRow>
-            <div>
-              <ButtonLink to="/en/contributing/translation-program/">
-                <Translation id="translation-banner-button-translate-page" />
-              </ButtonLink>
-            </div>
-            {!isPageContentEnglish && (
-              <div>
-                <SecondaryButtonLink isSecondary to={`/en${originalPagePath}`}>
-                  <Translation id="translation-banner-button-see-english" />
-                </SecondaryButtonLink>
-              </div>
-            )}
-          </ButtonRow>
-        </BannerContent>
-        <BannerClose
-          onClick={() => setIsOpen(false)}
-          isPageRightToLeft={isPageRightToLeft}
-        >
-          <BannerCloseIcon name="close" />
-        </BannerClose>
-      </StyledBanner>
-    </BannerContainer>
-  )
+  return <BannerContainer isOpen={isOpen}></BannerContainer>
 }
 
 export default TranslationBanner

@@ -1,8 +1,11 @@
 {
-  "template-usecase-dropdown-defi": "Decentralized finance (DeFi)",
-  "template-usecase-dropdown-nft": "Non-fungible tokens (NFTs)",
-  "template-usecase-dropdown-dao": "Decentralized autonomous organisations (DAOs)",
-  "template-usecase-dropdown": "Ethereum use cases",
+  "template-usecase-dropdown-ai": "AI/Machine Lerning",
+  "template-usecase-dropdown-blockchain": "Blockchain",
+  "template-usecase-dropdown-softwdevelop": "Desarrollo de Software",
+  "template-usecase-dropdown-devsecops": "DevSecOps",
+  "template-usecase-dropdown-consultoria": "Consultoria",
+  "template-usecase-dropdown-iot": "Internet de las cosas (IOT)",
+  "template-usecase-dropdown": "Servicios New Innetech",
   "template-usecase-banner": "Contrata asesoría en cualquiera de nuestros servicios, estamos dispuestos a ayudarte a crecer tu negocio.",
   "template-usecase-edit-link": "Edit page",
   "template-usecase-dropdown-aria": "Use case dropdown menu"
