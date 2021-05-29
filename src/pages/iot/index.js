@@ -394,7 +394,7 @@ export default Eth2IndexPage
 
 export const query = graphql`
   query {
-    oldship: file(relativePath: { eq: "eth2/aiabs.png" }) {
+    oldship: file(relativePath: { eq: "iot2.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
@@ -415,21 +415,21 @@ export const query = graphql`
         }
       }
     }
-    beaconchain: file(relativePath: { eq: "eth2/facere.png" }) {
+    beaconchain: file(relativePath: { eq: "eth2/platform-iot.png" }) {
       childImageSharp {
         fixed(width: 420) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    shards: file(relativePath: { eq: "eth2/microservice.png" }) {
+    shards: file(relativePath: { eq: "eth2/software.png" }) {
       childImageSharp {
         fixed(width: 420) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    themerge: file(relativePath: { eq: "eth2/object.png" }) {
+    themerge: file(relativePath: { eq: "eth2/circuit.png" }) {
       childImageSharp {
         fixed(width: 420) {
           ...GatsbyImageSharpFixed
