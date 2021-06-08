@@ -366,12 +366,6 @@ const Eth2IndexPage = ({ data }) => {
             <p>
               <Translation id="page-iot-index-staking-step-1-desc" />
             </p>
-            <h3>
-              <Translation id="page-iot-index-staking-step-2" />
-            </h3>
-            <p>
-              <Translation id="page-iot-index-staking-step-2-desc" />
-            </p>
           </StakingLeftColumn>
           <StakingRightColumn>
             <StakingCard
@@ -401,7 +395,7 @@ export const query = graphql`
         }
       }
     }
-    rhino: file(relativePath: { eq: "eth2/ai-frameworks3.png" }) {
+    rhino: file(relativePath: { eq: "eth2/iot_platforms.png" }) {
       childImageSharp {
         fluid(maxWidth: 320) {
           ...GatsbyImageSharpFluid

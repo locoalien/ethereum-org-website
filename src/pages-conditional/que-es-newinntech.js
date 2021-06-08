@@ -288,7 +288,7 @@ const WhatIsEthereumPage = ({ data }) => {
     },
     {
       title: <Translation id="page-what-is-ethereum-nft-title" />,
-      to: "/blockchain/",
+      to: "/blockchain2/",
       alt: translateMessageId("page-what-is-ethereum-nft-alt", intl),
       image: data.nft.childImageSharp.fixed,
       description: <Translation id="page-what-is-ethereum-nft-description" />,
