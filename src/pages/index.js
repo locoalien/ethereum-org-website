@@ -991,28 +991,28 @@ export const query = graphql`
         }
       }
     }
-    dogefixed: file(relativePath: { eq: "software-development.png" }) {
+    dogefixed: file(relativePath: { eq: "software-development1.png" }) {
       childImageSharp {
         fixed(width: 320) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    robotfixed: file(relativePath: { eq: "devops.png" }) {
+    robotfixed: file(relativePath: { eq: "devops5.png" }) {
       childImageSharp {
         fixed(width: 320) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    ethfixed: file(relativePath: { eq: "ai-dev.png" }) {
+    ethfixed: file(relativePath: { eq: "ai-dev3.png" }) {
       childImageSharp {
         fixed(width: 320) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    devfixed: file(relativePath: { eq: "web-design2.png" }) {
+    devfixed: file(relativePath: { eq: "web-design6.png" }) {
       childImageSharp {
         fixed(width: 320) {
           ...GatsbyImageSharpFixed

@@ -371,7 +371,7 @@ const Eth2IndexPage = ({ data }) => {
           </StakingLeftColumn>
           <StakingRightColumn>
             <StakingCard
-              emoji=":robot:"
+              emoji=":office:"
               title={translateMessageId(
                 "page-blockchain-index-staking-learn",
                 intl
@@ -400,7 +400,7 @@ export const query = graphql`
         }
       }
     }
-    rhino: file(relativePath: { eq: "eth2/iot_platforms.png" }) {
+    rhino: file(relativePath: { eq: "eth2/tecnologiasblock.png" }) {
       childImageSharp {
         fluid(maxWidth: 320) {
           ...GatsbyImageSharpFluid
