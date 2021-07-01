@@ -207,6 +207,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const contentV2Pages = [
     `eth`,
     `dapps`,
+    `devsecops_detail`,
     `wallets/index`,
     `what-is-ethereum`,
     `que-es-newinntech`,

@@ -153,6 +153,10 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
           to: "/que-es-newinntech/",
         },
         {
+          text: "devsecops-details",
+          to: "/devsecops_detail/",
+        },
+        {
           text: "get-eth",
           to: "/get-eth/",
         },

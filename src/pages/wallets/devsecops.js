@@ -146,7 +146,7 @@ const FindWalletPage = ({ location, data }) => {
         maxImageWidth={600}
       >
         <div>
-          <ButtonLink to="/dapps/">
+          <ButtonLink to="/devsecops_detail/">
             <Translation id="page-find-devsecops-use-your-devsecops" />
           </ButtonLink>
         </div>
