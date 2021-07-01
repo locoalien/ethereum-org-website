@@ -168,7 +168,7 @@ const PageMetadata = ({ description, meta, title, image, canonicalUrl }) => {
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "url": "https://ethereum.org",
+          "url": "https://newinntech.com",
           "email": "press@ethereum.org",
           "name": "Ethereum",
           "logo": "https://ethereum.org/og-image.png"

@@ -430,7 +430,7 @@ const HomePage = ({ data }) => {
         intl
       ),
       alt: translateMessageId("page-index-get-started-wallet-image-alt", intl),
-      to: "/wallets/find-wallet/",
+      to: "/wallets/devsecops/",
     },
 
     {
