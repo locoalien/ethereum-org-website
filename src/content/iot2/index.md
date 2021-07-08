@@ -10,9 +10,9 @@ image: ../../assets/use-cases/iot.png
 alt: "New Inntech IOT"
 summaryPoints:
   [
-    "Crea contratos inteligentes en la red de Ethereum, TRON, BTFS, IPFS, Cardano.",
-    "Capacitaciones teóricas y practicas.",
-    "Acompañamiento a las empresas en su proceso de adopción del Blockchain.",
+    "Desarrollamos soluciones basadas en IOT",
+    "Envio de informacion a sistemas Cloud desde dispositivos IOT",
+    "Diseño de Hardware para necesidades especificas",
   ]
 ---
 

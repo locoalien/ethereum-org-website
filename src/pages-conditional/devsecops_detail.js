@@ -358,6 +358,7 @@ const FINANCE = "finance"
 const TECHNOLOGY = "technology"
 const COLLECTIBLES = "collectibles"
 const GAMING = "gaming"
+const DEVOPS = "DevOps"
 
 const DappsPage = ({ data, location }) => {
   const intl = useIntl()
@@ -650,514 +651,6 @@ const DappsPage = ({ data, location }) => {
 
   const categoryKeys = Object.keys(categories)
 
-  const lending = [
-    {
-      title: "Aave",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-aave",
-        intl
-      ),
-      link: "https://aave.com/",
-      image: data.aave.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-aave-logo-alt", intl),
-    },
-    {
-      title: "Compound",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-compound",
-        intl
-      ),
-      link: "https://compound.finance/",
-      image: data.compound.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-compound-logo-alt", intl),
-    },
-    {
-      title: "Oasis",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-oasis",
-        intl
-      ),
-      link: "https://oasis.app/",
-      image: data.dai.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-oasis-logo-alt", intl),
-    },
-  ]
-
-  const dex = [
-    {
-      title: "Uniswap",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-uniswap",
-        intl
-      ),
-      link: "https://uniswap.org/",
-      image: data.uniswap.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-uniswap-logo-alt", intl),
-    },
-    {
-      title: "Matcha",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-matcha",
-        intl
-      ),
-      link: "https://matcha.xyz",
-      image: data.matcha.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-matcha-logo-alt", intl),
-    },
-    {
-      title: "1inch",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-1inch",
-        intl
-      ),
-      link: "https://1inch.exchange/",
-      image: data.oneinch.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-1inch-logo-alt", intl),
-    },
-  ]
-
-  const trading = [
-    {
-      title: "Polymarket",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-polymarket",
-        intl
-      ),
-      link: "https://polymarket.com",
-      image: data.polymarket.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-polymarket-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "Augur",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-augur",
-        intl
-      ),
-      link: "https://augur.net",
-      image: data.augur.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-augur-logo-alt", intl),
-    },
-    {
-      title: "Loopring",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-loopring",
-        intl
-      ),
-      link: "https://loopring.org/#/",
-      image: data.loopring.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-loopring-logo-alt", intl),
-    },
-    {
-      title: "dYdX",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-dydx",
-        intl
-      ),
-      link: "https://dydx.exchange/",
-      image: data.dydx.childImageSharp.fluid,
-      alt: "page-devsecops-detail-dydx-logo-alt",
-    },
-  ]
-
-  const lottery = [
-    {
-      title: "Gitcoin Grants",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-gitcoin-grants",
-        intl
-      ),
-      link: "https://gitcoin.co/grants/?",
-      image: data.gitcoin.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-gitcoin-grants-logo-alt",
-        intl
-      ),
-    },
-  ]
-
-  const payments = [
-    {
-      title: "Tornado cash",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-tornado-cash",
-        intl
-      ),
-      link: "https://tornado.cash/",
-      image: data.tornado.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-tornado-cash-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "Sablier",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-sablier",
-        intl
-      ),
-      link: "https://pay.sablier.finance/",
-      image: data.sablier.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-sablier-logo-alt", intl),
-    },
-  ]
-
-  const investments = [
-    {
-      title: "Token Sets",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-token-sets",
-        intl
-      ),
-      link: "https://www.tokensets.com/",
-      image: data.set.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-token-sets-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "PoolTogether",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-pooltogether",
-        intl
-      ),
-      link: "https://pooltogether.com/",
-      image: data.pooltogether.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-pooltogether-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "Index Coop",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-index-coop",
-        intl
-      ),
-      link: "https://www.indexcoop.com/",
-      image: data.index.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-index-coop-logo-alt",
-        intl
-      ),
-    },
-  ]
-
-  const insurance = [
-    {
-      title: "Nexus Mutual",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-nexus-mutual",
-        intl
-      ),
-      link: "https://nexusmutual.io/",
-      image: data.nexus.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-nexus-mutual-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "Etherisc",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-etherisc",
-        intl
-      ),
-      link: "https://etherisc.com/",
-      image: data.etherisc.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-etherisc-logo-alt", intl),
-    },
-  ]
-
-  const portfolios = [
-    {
-      title: "Zapper",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-zapper",
-        intl
-      ),
-      link: "https://zapper.fi/",
-      image: data.zapper.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-zapper-logo-alt", intl),
-    },
-    {
-      title: "Zerion",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-zerion",
-        intl
-      ),
-      link: "https://app.zerion.io/",
-      image: data.zerion.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-zerion-logo-alt", intl),
-    },
-    {
-      title: "Rotki",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-rotki",
-        intl
-      ),
-      link: "https://rotki.com/",
-      image: data.rotki.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-rotki-logo-alt", intl),
-    },
-  ]
-
-  const computing = [
-    {
-      title: "Golem",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-golem",
-        intl
-      ),
-      link: "https://golem.network/",
-      image: data.golem.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-golem-logo-alt", intl),
-    },
-    {
-      title: "radicle.xyz",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-radicle",
-        intl
-      ),
-      link: "https://radicle.xyz/",
-      image: data.radicle.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-radicle-logo-alt", intl),
-    },
-  ]
-
-  const marketplaces = [
-    {
-      title: "Gitcoin",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-gitcoin",
-        intl
-      ),
-      link: "https://gitcoin.co/",
-      image: data.gitcoin.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-gitcoin-logo-alt", intl),
-    },
-  ]
-
-  const utilities = [
-    {
-      title: "Ethereum Name Service (ENS)",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-ens",
-        intl
-      ),
-      link: "http://ens.domains/",
-      image: data.ens.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-ens-logo-alt", intl),
-    },
-  ]
-
-  const browsers = [
-    {
-      title: "Brave",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-brave",
-        intl
-      ),
-      link: "https://brave.com/",
-      image: data.brave.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-brave-logo-alt", intl),
-    },
-    {
-      title: "Opera",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-opera",
-        intl
-      ),
-      link: "https://www.opera.com/crypto",
-      image: data.opera.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-opera-logo-alt", intl),
-    },
-  ]
-
-  const arts = [
-    {
-      title: "Foundation",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-foundation",
-        intl
-      ),
-      link: "https://foundation.app/",
-      image: data.foundation.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-foundation-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "SuperRare",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-superrare",
-        intl
-      ),
-      link: "https://www.superrare.co",
-      image: data.superrare.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-superrare-logo-alt", intl),
-    },
-    {
-      title: "Nifty Gateway",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-nifty-gateway",
-        intl
-      ),
-      link: "https://niftygateway.com/",
-      image: data.nifty.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-nifty-gateway-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "Async Art",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-async-art",
-        intl
-      ),
-      link: "https://async.art/",
-      image: data.asyncart.childImageSharp.fluid,
-    },
-  ]
-
-  const music = [
-    {
-      title: "Audius",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-audius",
-        intl
-      ),
-      link: "https://audius.co/",
-      image: data.audius.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-audius-logo-alt", intl),
-    },
-  ]
-
-  const collectibles = [
-    {
-      title: "OpenSea",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-opensea",
-        intl
-      ),
-      link: "https://opensea.io/",
-      image: data.opensea.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-opensea-logo-alt", intl),
-    },
-    {
-      title: "marble.cards",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-marble-cards",
-        intl
-      ),
-      link: "https://marble.cards/",
-      image: data.marble.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-marble-cards-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "Rarible",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-rarible",
-        intl
-      ),
-      link: "https://rarible.com/",
-      image: data.rarible.childImageSharp.fluid,
-      alt: translateMessageId("page-devsecops-detail-rarible-logo-alt", intl),
-    },
-    {
-      title: "CryptoPunks",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-cryptopunks",
-        intl
-      ),
-      link: "https://www.larvalabs.com/cryptopunks",
-      image: data.cryptopunks.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-cryptopunks-logo-alt",
-        intl
-      ),
-    },
-  ]
-
-  const worlds = [
-    {
-      title: "Cryptovoxels",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-cryptovoxels",
-        intl
-      ),
-      link: "https://www.cryptovoxels.com/",
-      image: data.cryptovoxels.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-cryptovoxels-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "Decentraland",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-decentraland",
-        intl
-      ),
-      link: "https://decentraland.org/",
-      image: data.decentraland.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-decentraland-logo-alt",
-        intl
-      ),
-    },
-  ]
-
-  const competitive = [
-    {
-      title: "Axie Infinity",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-axie-infinity",
-        intl
-      ),
-      link: "https://axieinfinity.com/",
-      image: data.axie.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-axie-infinity-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "Gods Unchained",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-gods-unchained",
-        intl
-      ),
-      link: "https://godsunchained.com/",
-      image: data.gods.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-gods-unchained-logo-alt",
-        intl
-      ),
-    },
-    {
-      title: "Gitlab DevOps",
-      description: translateMessageId(
-        "page-devsecops-detail-dapp-description-dark-forest",
-        intl
-      ),
-      link: "https://about.gitlab.com/topics/devops/",
-      image: data.darkforest.childImageSharp.fluid,
-      alt: translateMessageId(
-        "page-devsecops-detail-dark-forest-logo-alt",
-        intl
-      ),
-    },
-  ]
-
   const editorChoices = [
     {
       name: "Jenkins",
@@ -1168,8 +661,8 @@ const DappsPage = ({ data, location }) => {
       url: "https://www.jenkins.io/",
       image: data.uniswapec.childImageSharp.fixed,
       alt: translateMessageId("page-devsecops-detail-uniswap-logo-alt", intl),
-      background: "#212F46",
-      type: FINANCE,
+      background: "#9EDFFF",
+      type: DEVOPS,
       pillColor: "tagMint",
     },
     {
@@ -1184,40 +677,40 @@ const DappsPage = ({ data, location }) => {
         "page-devsecops-detail-dark-forest-logo-alt",
         intl
       ),
-      background: "white",
-      type: GAMING,
+      background: "#9EDFFF",
+      type: DEVOPS,
       pillColor: "tagOrange",
     },
     {
-      name: "Foundation",
+      name: "Azure DevOps",
       description: translateMessageId(
         "page-devsecops-detail-editors-choice-foundation",
         intl
       ),
-      url: "https://foundation.app",
+      url: "https://azure.microsoft.com/es-es/services/devops/",
       image: data.foundationec.childImageSharp.fixed,
       alt: translateMessageId(
         "page-devsecops-detail-foundation-logo-alt",
         intl
       ),
-      background: "#ffffff",
-      type: COLLECTIBLES,
+      background: "#9EDFFF",
+      type: DEVOPS,
       pillColor: "tagBlue",
     },
     {
-      name: "PoolTogether",
+      name: "Travis CI",
       description: translateMessageId(
         "page-devsecops-detail-editors-choice-pooltogether",
         intl
       ),
-      url: "https://pooltogether.com",
+      url: "https://travis-ci.org/",
       image: data.pooltogetherec.childImageSharp.fixed,
       alt: translateMessageId(
         "page-devsecops-detail-pooltogether-logo-alt",
         intl
       ),
-      background: "#7E4CF2",
-      type: FINANCE,
+      background: "#9EDFFF",
+      type: DEVOPS,
       pillColor: "tagMint",
     },
   ]
@@ -1322,108 +815,6 @@ const DappsPage = ({ data, location }) => {
                 <Translation id="page-devsecops-detail-warning-message" />
               </StyledInfoBanner>
             </IntroRow>
-            <TwoColumnContent>
-              <LeftColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-lending",
-                    intl
-                  )}
-                  content={lending}
-                />
-              </LeftColumn>
-              <RightColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-dex",
-                    intl
-                  )}
-                  content={dex}
-                />
-              </RightColumn>
-            </TwoColumnContent>
-            <TwoColumnContent>
-              <LeftColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-trading",
-                    intl
-                  )}
-                  content={trading}
-                />
-              </LeftColumn>
-              <RightColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-investments",
-                    intl
-                  )}
-                  content={investments}
-                />
-              </RightColumn>
-            </TwoColumnContent>
-            <TwoColumnContent>
-              <LeftColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-payments",
-                    intl
-                  )}
-                  content={payments}
-                />
-              </LeftColumn>
-              <RightColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-lottery",
-                    intl
-                  )}
-                  content={lottery}
-                />
-              </RightColumn>
-            </TwoColumnContent>
-            <TwoColumnContent>
-              <LeftColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-insurance",
-                    intl
-                  )}
-                  content={insurance}
-                />
-              </LeftColumn>
-              <RightColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-portfolios",
-                    intl
-                  )}
-                  content={portfolios}
-                />
-              </RightColumn>
-            </TwoColumnContent>
-            <StyledCalloutBanner
-              title={translateMessageId(
-                "page-devsecops-detail-wallet-callout-title",
-                intl
-              )}
-              description={translateMessageId(
-                "page-devsecops-detail-wallet-callout-description",
-                intl
-              )}
-              image={data.wallet.childImageSharp.fluid}
-              maxImageWidth={300}
-              alt={translateMessageId(
-                "page-devsecops-detail-wallet-callout-image-alt",
-                intl
-              )}
-            >
-              <div>
-                <ButtonLink to="/wallets/find-wallet/">
-                  <Translation id="page-devsecops-detail-wallet-callout-button" />
-                </ButtonLink>
-              </div>
-            </StyledCalloutBanner>
           </Content>
         )}
         {selectedCategory === GAMING && (
@@ -1445,26 +836,6 @@ const DappsPage = ({ data, location }) => {
                 <Translation id="page-devsecops-detail-warning-message" />
               </StyledInfoBanner>
             </IntroRow>
-            <TwoColumnContent>
-              <LeftColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-worlds",
-                    intl
-                  )}
-                  content={worlds}
-                />
-              </LeftColumn>
-              <RightColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-competitive",
-                    intl
-                  )}
-                  content={competitive}
-                />
-              </RightColumn>
-            </TwoColumnContent>
           </Content>
         )}
         {selectedCategory === TECHNOLOGY && (
@@ -1486,46 +857,6 @@ const DappsPage = ({ data, location }) => {
                 <Translation id="page-devsecops-detail-warning-message" />
               </StyledInfoBanner>
             </IntroRow>
-            <TwoColumnContent>
-              <LeftColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-utilities",
-                    intl
-                  )}
-                  content={utilities}
-                />
-              </LeftColumn>
-              <RightColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-marketplaces",
-                    intl
-                  )}
-                  content={marketplaces}
-                />
-              </RightColumn>
-            </TwoColumnContent>
-            <TwoColumnContent>
-              <LeftColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-computing",
-                    intl
-                  )}
-                  content={computing}
-                />
-              </LeftColumn>
-              <RightColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-browsers",
-                    intl
-                  )}
-                  content={browsers}
-                />
-              </RightColumn>
-            </TwoColumnContent>
           </Content>
         )}
         {selectedCategory === COLLECTIBLES && (
@@ -1551,129 +882,12 @@ const DappsPage = ({ data, location }) => {
                 <Translation id="page-devsecops-detail-warning-message" />
               </StyledInfoBanner>
             </IntroRow>
-            <TwoColumnContent>
-              <LeftColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-arts",
-                    intl
-                  )}
-                  content={arts}
-                />
-
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-music",
-                    intl
-                  )}
-                  content={music}
-                />
-              </LeftColumn>
-              <RightColumn>
-                <ProductList
-                  category={translateMessageId(
-                    "page-devsecops-detail-category-collectibles",
-                    intl
-                  )}
-                  content={collectibles}
-                />
-              </RightColumn>
-            </TwoColumnContent>
           </Content>
         )}
         {/* General content for all categories */}
-        <Content>
-          <AddDapp>
-            <div>
-              <H2>
-                <Translation id="page-devsecops-detail-add-title" />
-              </H2>
-              <TextNoMargin>
-                <Translation id="listing-policy-disclaimer" />{" "}
-              </TextNoMargin>
-            </div>
-            <AddDappButton
-              isSecondary
-              to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_dapp.md&title="
-            >
-              <Translation id="page-devsecops-detail-add-button" />
-            </AddDappButton>
-          </AddDapp>
-          <CenterDivider />
-          {categories[selectedCategory].benefits && (
-            <About>
-              <h2>
-                <Translation id="page-devsecops-detail-magic-title-1" />{" "}
-                <Emoji size={"1rem"} text=":sparkles:" />{" "}
-                <Translation id="page-devsecops-detail-magic-title-2" />{" "}
-                {categories[selectedCategory].benefitsTitle}
-              </h2>
-              <p>{categories[selectedCategory.benefitsDescription]}</p>
-              <CardContainer>
-                {categories[selectedCategory].benefits.map((art, idx) => (
-                  <CenteredCard
-                    key={idx}
-                    emoji={art.emoji}
-                    title={art.title}
-                    description={art.description}
-                  />
-                ))}
-              </CardContainer>
-              {selectedCategory === FINANCE && (
-                <MoreButtonContainer>
-                  <ButtonLink isSecondary to="/defi/">
-                    <Translation id="page-devsecops-detail-more-on-defi-button" />
-                  </ButtonLink>
-                </MoreButtonContainer>
-              )}
-              {selectedCategory === COLLECTIBLES && (
-                <MoreButtonContainer>
-                  <ButtonLink isSecondary to="/nft/">
-                    <Translation id="page-devsecops-detail-more-on-nft-button" />
-                  </ButtonLink>
-                </MoreButtonContainer>
-              )}
-              {selectedCategory === GAMING && (
-                <MoreButtonContainer>
-                  <ButtonLink isSecondary to="/nft/">
-                    <Translation id="page-devsecops-detail-more-on-nft-gaming-button" />
-                  </ButtonLink>
-                </MoreButtonContainer>
-              )}
-            </About>
-          )}
-        </Content>
-        <MobileOptionContainer>
-          <h3>
-            <Translation id="page-devsecops-detail-mobile-options-header" />
-          </h3>
-          {categoryKeys.map((key, idx) => {
-            const category = categories[key]
-            return (
-              <Option
-                key={idx}
-                isActive={selectedCategory === key}
-                onClick={() => handleCategorySelect(key, true)}
-              >
-                <Emoji mr={`1rem`} text={category.emoji} />
-                <OptionText>{category.title}</OptionText>
-              </Option>
-            )
-          })}
-        </MobileOptionContainer>
+        <Content></Content>
       </FullWidthContainer>
       <Content>
-        <ImageContainer id="what-are-dapps">
-          <StyledGhostCard>
-            <MagiciansImage
-              fluid={data.magicians.childImageSharp.fluid}
-              alt={translateMessageId(
-                "page-devsecops-detail-magician-img-alt",
-                intl
-              )}
-            />
-          </StyledGhostCard>
-        </ImageContainer>
         <Box>
           <h2>
             <Translation id="page-devsecops-detail-magic-behind-dapps-title" />
@@ -1799,13 +1013,13 @@ export const query = graphql`
     uniswapec: file(relativePath: { eq: "dapps/jenkins.png" }) {
       ...editorImage
     }
-    foundationec: file(relativePath: { eq: "dapps/foundation.png" }) {
+    foundationec: file(relativePath: { eq: "dapps/azuredevops.png" }) {
       ...editorImage
     }
     darkforestec: file(relativePath: { eq: "dapps/gitlab.png" }) {
       ...editorImage
     }
-    pooltogetherec: file(relativePath: { eq: "dapps/pooltogether.png" }) {
+    pooltogetherec: file(relativePath: { eq: "dapps/travisdevops.png" }) {
       ...editorImage
     }
     aave: file(relativePath: { eq: "dapps/aave.png" }) {
