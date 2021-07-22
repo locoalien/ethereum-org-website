@@ -421,7 +421,7 @@ const DappsPage = ({ data, location }) => {
         "page-devsecops-detail-features-1-description",
         intl
       ),
-      emoji: ":bust_in_silhouette:",
+      emoji: ":desktop_computer:",
     },
     {
       title: translateMessageId("page-devsecops-detail-features-2-title", intl),
@@ -429,7 +429,7 @@ const DappsPage = ({ data, location }) => {
         "page-devsecops-detail-features-2-description",
         intl
       ),
-      emoji: ":megaphone:",
+      emoji: ":alarm_clock:",
     },
     {
       title: translateMessageId("page-devsecops-detail-features-3-title", intl),
@@ -437,7 +437,7 @@ const DappsPage = ({ data, location }) => {
         "page-devsecops-detail-features-3-description",
         intl
       ),
-      emoji: ":money-mouth_face:",
+      emoji: ":package:",
     },
     {
       title: translateMessageId("page-devsecops-detail-features-4-title", intl),
@@ -445,7 +445,7 @@ const DappsPage = ({ data, location }) => {
         "page-devsecops-detail-features-4-description",
         intl
       ),
-      emoji: ":electric_plug:",
+      emoji: ":artist_palette:",
     },
     {
       title: translateMessageId("page-devsecops-detail-features-5-title", intl),
@@ -453,7 +453,7 @@ const DappsPage = ({ data, location }) => {
         "page-devsecops-detail-features-5-description",
         intl
       ),
-      emoji: ":detective:",
+      emoji: ":locked_with_key:",
     },
     {
       title: translateMessageId("page-devsecops-detail-features-6-title", intl),
@@ -461,7 +461,7 @@ const DappsPage = ({ data, location }) => {
         "page-devsecops-detail-features-6-description",
         intl
       ),
-      emoji: ":key:",
+      emoji: ":racing_car:",
     },
     {
       title: translateMessageId("page-devsecops-detail-features-7-title", intl),
@@ -469,14 +469,14 @@ const DappsPage = ({ data, location }) => {
         "page-devsecops-detail-features-7-description",
         intl
       ),
-      emoji: ":antenna_with_bars:",
+      emoji: ":dress:",
     },
   ]
 
   const categories = {
     finance: {
       title: translateMessageId("page-devsecops-detail-finance-button", intl),
-      emoji: ":money_with_wings:",
+      emoji: ":soap:",
       benefitsTitle: translateMessageId(
         "page-devsecops-detail-finance-benefits-title",
         intl
@@ -537,7 +537,7 @@ const DappsPage = ({ data, location }) => {
         "page-devsecops-detail-collectibles-button",
         intl
       ),
-      emoji: ":frame_with_picture:",
+      emoji: ":locked_with_key:",
       benefitsTitle: translateMessageId(
         "page-devsecops-detail-collectibles-benefits-title",
         intl
@@ -595,7 +595,7 @@ const DappsPage = ({ data, location }) => {
     },
     gaming: {
       title: translateMessageId("page-devsecops-detail-gaming-button", intl),
-      emoji: ":video_game:",
+      emoji: ":building_construction:",
       benefitsTitle: translateMessageId(
         "page-devsecops-detail-gaming-benefits-title",
         intl
@@ -798,11 +798,7 @@ const DappsPage = ({ data, location }) => {
               <Column>
                 <H2>
                   <Translation id="page-devsecops-detail-finance-title" />{" "}
-                  <Emoji
-                    size={"2rem"}
-                    ml={"0.5rem"}
-                    text=":money_with_wings:"
-                  />
+                  <Emoji size={"2rem"} ml={"0.5rem"} text=":soap:" />
                 </H2>
                 <Subtitle>
                   <Translation id="page-devsecops-detail-finance-description" />
@@ -865,11 +861,7 @@ const DappsPage = ({ data, location }) => {
               <Column>
                 <H2>
                   <Translation id="page-devsecops-detail-collectibles-title" />{" "}
-                  <Emoji
-                    size={"2rem"}
-                    ml={"0.5rem"}
-                    text=":frame_with_picture:"
-                  />
+                  <Emoji size={"2rem"} ml={"0.5rem"} text=":locked_with_key:" />
                 </H2>
                 <Subtitle>
                   <Translation id="page-devsecops-detail-collectibles-description" />
