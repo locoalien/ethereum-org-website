@@ -390,7 +390,7 @@ const DappsPage = ({ data, location }) => {
 
   const updatePath = (selectedCategory, isMobile) => {
     // Update URL path with new filter query params
-    let newPath = `/dapps/?category=${selectedCategory || FINANCE}`
+    let newPath = `/devsecops_detail/?category=${selectedCategory || FINANCE}`
     // If "mobile" option at bottom of the page...
     if (isMobile) {
       // Add #explore and refresh
@@ -819,7 +819,11 @@ const DappsPage = ({ data, location }) => {
               <Column>
                 <H2>
                   <Translation id="page-devsecops-detail-gaming-title" />{" "}
-                  <Emoji size={"2rem"} ml={"0.5rem"} text=":video_game:" />
+                  <Emoji
+                    size={"2rem"}
+                    ml={"0.5rem"}
+                    text=":building_construction:"
+                  />
                 </H2>
                 <Subtitle>
                   <Translation id="page-devsecops-detail-gaming-description" />
@@ -906,14 +910,6 @@ const DappsPage = ({ data, location }) => {
             <p>
               <Translation id="page-devsecops-detail-how-dapps-work-p3" />
             </p>
-            <StyledDocLink
-              to="/developers/docs/dapps/"
-              title="Intro to dapps"
-            />
-            <StyledDocLink
-              to="/developers/docs/smart-contracts/"
-              title="Smart contracts"
-            />
           </LeftColumn>
           <RightColumn>
             <StyledCallout
@@ -988,7 +984,7 @@ export const query = graphql`
         }
       }
     }
-    developers: file(relativePath: { eq: "developers-eth-blocks.png" }) {
+    developers: file(relativePath: { eq: "newinntech.png" }) {
       childImageSharp {
         fixed(height: 200) {
           ...GatsbyImageSharpFixed
