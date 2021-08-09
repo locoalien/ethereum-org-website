@@ -441,7 +441,7 @@ const HomePage = ({ data }) => {
         intl
       ),
       alt: translateMessageId("page-index-get-started-eth-image-alt", intl),
-      to: "/get-eth/",
+      to: "/ai-service/",
     },
     {
       image: data.dogefixed.childImageSharp.fixed,
