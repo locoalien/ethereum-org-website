@@ -8,7 +8,7 @@ const siteUrl = `https://ethereum.org`
 module.exports = {
   siteMetadata: {
     // `title` & `description` pulls from respective ${lang}.json files in PageMetadata.js
-    title: `ethereum.org`,
+    title: `newinntech.com`,
     description: `Ethereum is a global, decentralized platform for money and new kinds of applications. On Ethereum, you can write code that controls money, and build applications accessible anywhere in the world.`,
     url: siteUrl,
     siteUrl,

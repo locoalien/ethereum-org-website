@@ -175,12 +175,12 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
       ],
     },
     {
-      text: "use-ethereum",
+      text: "soft-services",
       ariaLabel: "use-ethereum-menu",
       items: [
         {
-          text: "ethereum-wallets",
-          to: "/wallets/",
+          text: "desarrollo",
+          to: "/desarrollo/",
         },
         {
           text: "get-eth",

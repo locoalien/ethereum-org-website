@@ -48,6 +48,7 @@ const outdatedMarkdownPages = [
   "/eth/",
   "/learn/",
   "/wallets/",
+  "/desarrollo/",
   "/what-is-ethereum/",
   "/prueba/",
 ]
@@ -208,7 +209,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `eth`,
     `dapps`,
     `devsecops_detail`,
-    `wallets/index`,
+    `desarrollo/index`,
     `what-is-ethereum`,
     `que-es-newinntech`,
   ]

@@ -141,6 +141,10 @@
   to = "/en/wallets/"
   force = true
 [[redirects]]
+  from = "/aws/"
+  to = "/en/aws/"
+  force = true
+[[redirects]]
   from = "/learn/"
   to = "/en/learn/"
   force = true
