@@ -202,19 +202,39 @@ const types = [
 
 const articles = [
   {
-    title: <Translation id="page-wallets-protecting-yourself" />,
-    description: "MyCrypto",
-    link: "https://support.mycrypto.com/staying-safe/protecting-yourself-and-your-funds",
+    title: <Translation id="page-desarrollo-protecting-yourself" />,
+    description:
+      "Expertos en DevSecOps garantizando el ciclo de vida del Software CI y CD",
+    link: "/wallets/devsecops/",
   },
   {
     title: <Translation id="page-desarrollo-keys-to-safety" />,
-    description: <Translation id="page-wallets-blog" />,
-    link: "https://blog.coinbase.com/the-keys-to-keeping-your-crypto-safe-96d497cce6cf",
+    description: <Translation id="page-desarrollo-blog" />,
+    link: "/que-es-newinntech/",
   },
   {
-    title: <Translation id="page-wallets-how-to-store" />,
-    description: "ConsenSys",
-    link: "https://media.consensys.net/how-to-store-digital-assets-on-ethereum-a2bfdcf66bd0",
+    title: <Translation id="page-desarrollo-how-to-store" />,
+    description:
+      "Consultoría en diferentes plataformas. Puedes contratar directamente nuestros expertos para que trabajen tiempo completo para tu organización",
+    link: "/",
+  },
+  {
+    title: "Blockchain",
+    description:
+      "Creamos soluciones en Blockchain, despliegue de Smart Contracts en plataformas Ethereum",
+    link: "/blockchain2/",
+  },
+  {
+    title: "Inteligencia artificial (Machine Learning)",
+    description:
+      "uedes contactar con nosotros, servicios de Machine Learning y creación de modelos personalizados",
+    link: "/ai-service/",
+  },
+  {
+    title: "Internet de las cosas (IOT)",
+    description:
+      "Implementamos Software y diseñamos Hardware a la medida. Extraemos información de cualquier dispositivo hacia la nube o sistemas On-Premise.",
+    link: "/iot/",
   },
 ]
 
@@ -242,21 +262,11 @@ const WalletsPage = ({ data }) => {
   }, [data, intl])
 
   const cryptoCurious = wallets
-    .filter(
-      (wallet) =>
-        (wallet.has_card_deposits === "TRUE" ||
-          wallet.has_explore_dapps === "TRUE") &&
-        wallet.has_hardware !== "TRUE"
-    )
+    .filter((wallet) => wallet.frontend === "TRUE")
     .slice(0, 4)
 
   const cryptoConverted = wallets
-    .filter(
-      (wallet) =>
-        wallet.has_hardware === "TRUE" ||
-        wallet.has_high_volume_purchases === "TRUE" ||
-        wallet.has_limits_protection === "TRUE"
-    )
+    .filter((wallet) => wallet.backend === "TRUE")
     .slice(0, 4)
 
   const heroContent = {
@@ -356,24 +366,24 @@ const WalletsPage = ({ data }) => {
       <GradientContainer>
         <Content>
           <H2>
-            <Translation id="page-wallets-get-wallet" />
+            <Translation id="page-desarrollo-get-wallet" />
           </H2>
           <p>
-            <Translation id="page-wallets-get-wallet-desc" />
+            <Translation id="page-desarrollo-get-wallet-desc" />
           </p>
           <p>
             <em>
-              <Translation id="page-wallets-get-wallet-desc-2" />
+              <Translation id="page-desarrollo-get-wallet-desc-2" />
             </em>
           </p>
         </Content>
         <TwoColumnContent>
           <LeftColumn>
             <ContainerCard
-              emoji=":thinking_face:"
-              title={translateMessageId("page-wallets-curious", intl)}
+              emoji=":sunrise:"
+              title={translateMessageId("page-desarrollo-curious", intl)}
               description={translateMessageId(
-                "page-wallets-curious-desc",
+                "page-desarrollo-curious-desc",
                 intl
               )}
             >
@@ -382,10 +392,10 @@ const WalletsPage = ({ data }) => {
           </LeftColumn>
           <RightColumn>
             <ContainerCard
-              emoji=":whale:"
-              title={translateMessageId("page-wallets-converted", intl)}
+              emoji=":octopus:"
+              title={translateMessageId("page-desarrollo-converted", intl)}
               description={translateMessageId(
-                "page-wallets-converted-desc",
+                "page-desarrollo-converted-desc",
                 intl
               )}
             >
@@ -393,129 +403,61 @@ const WalletsPage = ({ data }) => {
             </ContainerCard>
           </RightColumn>
         </TwoColumnContent>
-        <Content>
-          <CentralColumn>
-            <Divider />
-            <H2>
-              <Translation id="page-wallets-features-title" />
-            </H2>
-            <SubtitleThree>
-              <Translation id="page-wallets-features-desc" />
-            </SubtitleThree>
-            <ButtonLink to="/wallets/find-wallet/">
-              <Translation id="page-desarrollo-find-wallet-btn" />
-            </ButtonLink>
-            <FindWallet fluid={data.findWallet.childImageSharp.fluid} alt="" />
-          </CentralColumn>
-        </Content>
       </GradientContainer>
       <TwoColumnContent>
         <LeftColumn>
           <H2>
-            <Translation id="page-wallets-stay-safe" />
+            <Translation id="page-desarrollo-stay-safe" />
           </H2>
           <SubtitleTwo>
-            <Translation id="page-wallets-stay-safe-desc" />
+            <Translation id="page-desarrollo-stay-safe-desc" />
           </SubtitleTwo>
           <div>
             <ChecklistItem
               key="0"
               emoji=":white_check_mark:"
               title={translateMessageId(
-                "page-wallets-take-responsibility",
+                "page-desarrollo-take-responsibility",
                 intl
               )}
               description={translateMessageId(
-                "page-wallets-take-responsibility-desc",
+                "page-desarrollo-take-responsibility-desc",
                 intl
               )}
             />
             <ChecklistItem
               key="1"
               emoji=":white_check_mark:"
-              title={translateMessageId("page-wallets-seed-phrase", intl)}
+              title={translateMessageId("page-desarrollo-seed-phrase", intl)}
               description={translateMessageId(
-                "page-wallets-seed-phrase-desc",
+                "page-desarrollo-seed-phrase-desc",
                 intl
               )}
             >
               <p>
-                <Translation id="page-wallets-seed-phrase-example" />
+                <Translation id="page-desarollo-seed-phrase-example" />
               </p>
               <CodeBox>
                 <Code>
-                  <Translation id="page-wallets-seed-phrase-snippet" />
+                  <Translation id="page-desarrollo-seed-phrase-snippet" />
                 </Code>
               </CodeBox>
               <p>
-                <Translation id="page-wallets-seed-phrase-write-down" />
+                <Translation id="page-desarrollo-seed-phrase-write-down" />
               </p>
             </ChecklistItem>
-            <ChecklistItem
-              key="2"
-              emoji=":white_check_mark:"
-              title={translateMessageId("page-wallets-bookmarking", intl)}
-              description={translateMessageId(
-                "page-wallets-bookmarking-desc",
-                intl
-              )}
-            />
-            <ChecklistItem
-              key="3"
-              emoji=":white_check_mark:"
-              title={translateMessageId("page-wallets-triple-check", intl)}
-              description={translateMessageId(
-                "page-wallets-triple-check-desc",
-                intl
-              )}
-            />
           </div>
         </LeftColumn>
         <RightColumn>
           <H2>
-            <Translation id="page-wallets-tips" />
+            <Translation id="page-desarrollo-tips" />
           </H2>
           <SubtitleTwo>
-            <Translation id="page-wallets-tips-community" />
+            <Translation id="page-desarrollo-tips-community" />
           </SubtitleTwo>
           <CardList content={articles} />
         </RightColumn>
       </TwoColumnContent>
-      <Content>
-        <Divider />
-        <H2>
-          <Translation id="page-wallets-explore" />
-        </H2>
-        <CalloutCardContainer>
-          <StyledCallout
-            image={data.eth.childImageSharp.fixed}
-            title={translateMessageId("page-wallets-get-some", intl)}
-            alt={translateMessageId("page-wallets-get-some-alt", intl)}
-            description={translateMessageId("page-wallets-get-some-desc", intl)}
-          >
-            <div>
-              <ButtonLink to="/get-eth/">
-                <Translation id="page-wallets-get-some-btn" />
-              </ButtonLink>
-            </div>
-          </StyledCallout>
-          <StyledCallout
-            image={data.dapps.childImageSharp.fixed}
-            title={translateMessageId("page-wallets-try-dapps", intl)}
-            alt={translateMessageId("page-wallets-try-dapps-alt", intl)}
-            description={translateMessageId(
-              "page-wallets-try-dapps-desc",
-              intl
-            )}
-          >
-            <div>
-              <ButtonLink to="/dapps/">
-                <Translation id="page-wallets-more-on-dapps-btn" />
-              </ButtonLink>
-            </div>
-          </StyledCallout>
-        </CalloutCardContainer>
-      </Content>
     </Page>
   )
 }
@@ -577,6 +519,8 @@ export const query = graphql`
         name
         url
         brand_color
+        frontend
+        backend
         has_mobile
         has_desktop
         has_web
@@ -602,115 +546,29 @@ export const query = graphql`
         }
       }
     }
-    alpha: file(relativePath: { eq: "wallets/alpha.png" }) {
+
+    reactjs: file(relativePath: { eq: "frontend/reactjs.png" }) {
       ...listImage
     }
-    argent: file(relativePath: { eq: "wallets/argent.png" }) {
+    angular: file(relativePath: { eq: "frontend/angular.png" }) {
       ...listImage
     }
-    atomic: file(relativePath: { eq: "wallets/atomic.png" }) {
+    remix: file(relativePath: { eq: "frontend/remix.png" }) {
       ...listImage
     }
-    bitski: file(relativePath: { eq: "wallets/bitski.png" }) {
+    vite: file(relativePath: { eq: "frontend/vite.png" }) {
       ...listImage
     }
-    blockchain: file(relativePath: { eq: "wallets/blockchain.png" }) {
+    nodejs: file(relativePath: { eq: "frontend/nodejs.png" }) {
       ...listImage
     }
-    coinbase: file(relativePath: { eq: "wallets/coinbase.png" }) {
+    python: file(relativePath: { eq: "frontend/python.webp" }) {
       ...listImage
     }
-    coinomi: file(relativePath: { eq: "wallets/coinomi.png" }) {
+    java: file(relativePath: { eq: "frontend/java.webp" }) {
       ...listImage
     }
-    dcent: file(relativePath: { eq: "wallets/dcent.png" }) {
-      ...listImage
-    }
-    dharma: file(relativePath: { eq: "wallets/dharma.png" }) {
-      ...listImage
-    }
-    eidoo: file(relativePath: { eq: "wallets/eidoo.png" }) {
-      ...listImage
-    }
-    enjin: file(relativePath: { eq: "wallets/enjin.png" }) {
-      ...listImage
-    }
-    eql: file(relativePath: { eq: "wallets/eql.png" }) {
-      ...listImage
-    }
-    fortmatic: file(relativePath: { eq: "wallets/fortmatic.png" }) {
-      ...listImage
-    }
-    gnosis: file(relativePath: { eq: "wallets/gnosis.png" }) {
-      ...listImage
-    }
-    guarda: file(relativePath: { eq: "wallets/guarda.png" }) {
-      ...listImage
-    }
-    hyperpay: file(relativePath: { eq: "wallets/hyperpay.png" }) {
-      ...listImage
-    }
-    imtoken: file(relativePath: { eq: "wallets/imtoken.png" }) {
-      ...listImage
-    }
-    ledger: file(relativePath: { eq: "wallets/ledger.png" }) {
-      ...listImage
-    }
-    linen: file(relativePath: { eq: "wallets/linen.png" }) {
-      ...listImage
-    }
-    lumi: file(relativePath: { eq: "wallets/lumi.png" }) {
-      ...listImage
-    }
-    mathwallet: file(relativePath: { eq: "wallets/mathwallet.png" }) {
-      ...listImage
-    }
-    metamask: file(relativePath: { eq: "wallets/metamask.png" }) {
-      ...listImage
-    }
-    monolith: file(relativePath: { eq: "wallets/monolith.png" }) {
-      ...listImage
-    }
-    multis: file(relativePath: { eq: "wallets/multis.png" }) {
-      ...listImage
-    }
-    mycrypto: file(relativePath: { eq: "wallets/mycrypto.png" }) {
-      ...listImage
-    }
-    myetherwallet: file(relativePath: { eq: "wallets/myetherwallet.png" }) {
-      ...listImage
-    }
-    pillar: file(relativePath: { eq: "wallets/pillar.png" }) {
-      ...listImage
-    }
-    portis: file(relativePath: { eq: "wallets/portis.png" }) {
-      ...listImage
-    }
-    rainbow: file(relativePath: { eq: "wallets/rainbow.png" }) {
-      ...listImage
-    }
-    squarelink: file(relativePath: { eq: "wallets/squarelink.png" }) {
-      ...listImage
-    }
-    status: file(relativePath: { eq: "wallets/status.png" }) {
-      ...listImage
-    }
-    torus: file(relativePath: { eq: "wallets/torus.png" }) {
-      ...listImage
-    }
-    trezor: file(relativePath: { eq: "wallets/trezor.png" }) {
-      ...listImage
-    }
-    trust: file(relativePath: { eq: "wallets/trust.png" }) {
-      ...listImage
-    }
-    unstoppable: file(relativePath: { eq: "wallets/unstoppable.png" }) {
-      ...listImage
-    }
-    zengo: file(relativePath: { eq: "wallets/zengo.png" }) {
-      ...listImage
-    }
-    tokenpocket: file(relativePath: { eq: "wallets/tokenpocket.png" }) {
+    netcore: file(relativePath: { eq: "frontend/netcore.webp" }) {
       ...listImage
     }
   }
