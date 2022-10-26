@@ -163,38 +163,40 @@ const H2 = styled.h2`
 
 const cards = [
   {
-    emoji: ":dollar:",
-    title: <Translation id="page-wallets-manage-funds" />,
-    description: <Translation id="page-wallets-manage-funds-desc" />,
+    emoji: ":rocket:",
+    title: <Translation id="page-desarrollo-manage-funds" />,
+    description: <Translation id="page-desarrollo-manage-funds-desc" />,
   },
   {
-    emoji: ":frame_with_picture:",
-    title: <Translation id="page-wallets-your-ethereum-account" />,
-    description: <Translation id="page-wallets-your-ethereum-account-desc" />,
+    emoji: ":construction:",
+    title: <Translation id="page-desarrollo-your-ethereum-account" />,
+    description: (
+      <Translation id="page-desarrollo-your-ethereum-account-desc" />
+    ),
   },
   {
-    emoji: ":bust_in_silhouette:",
-    title: <Translation id="page-wallets-your-login" />,
-    description: <Translation id="page-wallets-your-login-desc" />,
+    emoji: ":office:",
+    title: <Translation id="page-desarrollo-your-login" />,
+    description: <Translation id="page-desarrollo-your-login-desc" />,
   },
 ]
 
 const types = [
   {
-    emoji: ":cd:",
-    description: <Translation id="page-wallets-cd" />,
+    emoji: ":zap:",
+    description: <Translation id="page-desarrollo-cd" />,
   },
   {
-    emoji: ":mobile_phone:",
-    description: <Translation id="page-wallets-mobile" />,
+    emoji: " :rocket:",
+    description: <Translation id="page-desarrollo-mobile" />,
   },
   {
-    emoji: ":globe_with_meridians:",
-    description: <Translation id="page-wallets-web-browser" />,
+    emoji: ":doughnut:",
+    description: <Translation id="page-desarrollo-web-browser" />,
   },
   {
-    emoji: ":desktop_computer:",
-    description: <Translation id="page-wallets-desktop" />,
+    emoji: ":lollipop:",
+    description: <Translation id="page-desarrollo-desktop" />,
   },
 ]
 
@@ -262,7 +264,7 @@ const WalletsPage = ({ data }) => {
     header: translateMessageId("page-desarrollo-slogan", intl),
     subtitle: translateMessageId("page-desarrollo-subtitle", intl),
     image: data.hero.childImageSharp.fluid,
-    alt: translateMessageId("page-wallets-alt", intl),
+    alt: translateMessageId("page-desarrollo-alt", intl),
     buttons: [
       {
         path: "/wallets/find-wallet/",
@@ -282,29 +284,15 @@ const WalletsPage = ({ data }) => {
       <StyledGrayContainer>
         <Intro>
           <H2>
-            <Translation id="page-wallets-whats-a-wallet" />
+            <Translation id="page-desarrollo-whats-a-wallet" />
           </H2>
         </Intro>
         <IntroTwoColumnContent>
           <LeftColumn>
             <p>
-              <Translation id="page-wallets-description" />
-            </p>
-            <p>
-              <Translation id="page-wallets-desc-2" />{" "}
-              <Link to="/eth/">
-                <Translation id="page-wallets-desc-2-link" />{" "}
-              </Link>
+              <Translation id="page-desarrollo-description" />
             </p>
           </LeftColumn>
-          <StyledRightColumn>
-            <p>
-              <Translation id="page-wallets-desc-3" />
-            </p>
-            <p>
-              <Translation id="page-wallets-desc-4" />
-            </p>
-          </StyledRightColumn>
         </IntroTwoColumnContent>
         <Content>
           <CardContainer>
@@ -322,35 +310,35 @@ const WalletsPage = ({ data }) => {
       <StyledTwoColumnContent>
         <LeftColumn>
           <H2>
-            <Translation id="page-wallets-accounts-addresses" />
+            <Translation id="page-desarrollo-accounts-addresses" />
           </H2>
           <p>
-            <Translation id="page-wallets-accounts-addresses-desc" />
+            <Translation id="page-desarrollo-accounts-addresses-desc" />
           </p>
           <ul>
             <li>
               <p>
-                <Translation id="page-wallets-ethereum-account" />
+                <Translation id="page-desarrollo-account" />
               </p>
             </li>
             <li>
               <p>
-                <Translation id="page-wallets-accounts-ethereum-addresses" />
+                <Translation id="page-desarrollo-accounts-ethereum-addresses" />
               </p>
             </li>
             <li>
               <p>
-                <Translation id="page-wallets-ethereum-wallet" />
+                <Translation id="page-desarrollo-ethereum-wallet" />
               </p>
             </li>
           </ul>
           <p>
-            <Translation id="page-wallets-most-wallets" />
+            <Translation id="page-desarrollo-most-wallets" />
           </p>
         </LeftColumn>
         <RightColumn>
           <H2>
-            <Translation id="page-wallets-types" />
+            <Translation id="page-desarrollo-types" />
           </H2>
           <div>
             {types.map((type, idx) => (
