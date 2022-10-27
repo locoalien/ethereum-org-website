@@ -153,10 +153,6 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
           to: "/que-es-newinntech/",
         },
         {
-          text: "devsecops-details",
-          to: "/devsecops_detail/",
-        },
-        {
           text: "get-eth",
           to: "/get-eth/",
         },
@@ -181,6 +177,30 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
         {
           text: "desarrollo",
           to: "/desarrollo/",
+        },
+        {
+          text: "consultoria-details",
+          to: "/consultoria/",
+        },
+        {
+          text: "arquitectura-details",
+          to: "/arquitectura/detalle/",
+        },
+        {
+          text: "devsecops-details",
+          to: "/wallets/devsecops/",
+        },
+        {
+          text: "blockchain-details",
+          to: "/blockchain2/",
+        },
+        {
+          text: "ai-details",
+          to: "/ai/",
+        },
+        {
+          text: "iot-details",
+          to: "/iot/",
         },
         {
           text: "get-eth",

@@ -451,7 +451,7 @@ const HomePage = ({ data }) => {
         intl
       ),
       alt: translateMessageId("page-index-get-started-dapps-image-alt", intl),
-      to: "/dapps/",
+      to: "/desarrollo/",
     },
     {
       image: data.devfixed.childImageSharp.fixed,
