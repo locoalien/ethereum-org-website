@@ -910,7 +910,7 @@ export const query = graphql`
         }
       }
     }
-    hackathon: file(relativePath: { eq: "development.png" }) {
+    hackathon: file(relativePath: { eq: "development.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 1440) {
           ...GatsbyImageSharpFluid

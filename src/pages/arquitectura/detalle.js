@@ -255,7 +255,7 @@ const StakingPage = ({ data, location }) => {
         </H2>
         <CardContainer>
           <StyledCard
-            emoji=":evergreen_tree:"
+            emoji=":computer:"
             title={translateMessageId(
               "page-arquitectura-staking-sustainability",
               intl
@@ -266,7 +266,7 @@ const StakingPage = ({ data, location }) => {
             )}
           />
           <StyledCard
-            emoji=":globe_showing_americas:"
+            emoji=":cloud:"
             title={translateMessageId(
               "page-arquitectura-staking-accessibility",
               intl
@@ -277,7 +277,7 @@ const StakingPage = ({ data, location }) => {
             )}
           />
           <StyledCard
-            emoji=":old_key:"
+            emoji=":bulb:"
             title={translateMessageId(
               "page-arquitectura-staking-sharding",
               intl
@@ -286,11 +286,7 @@ const StakingPage = ({ data, location }) => {
               "page-arquitectura-staking-sharding-desc",
               intl
             )}
-          >
-            <Link to="/arquitectura/shard-chains/">
-              <Translation id="page-arquitectura-staking-more-sharding" />
-            </Link>
-          </StyledCard>
+          ></StyledCard>
         </CardContainer>
       </Content>
     </Page>

@@ -187,9 +187,7 @@ const LegacyPageHome = () => {
       <Content>
         <Header>
           <Title>
-            <H1>
-              <Translation id="page-index-title" />
-            </H1>
+            <H1></H1>
             <H3>
               <Morpher />
             </H3>
